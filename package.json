@@ -1,0 +1,19 @@
+{
+  "name": "slimeescapemaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttn218/SlimeEscapeMaker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttn218/SlimeEscapeMaker/issues"
+  },
+  "homepage": "https://github.com/ttn218/SlimeEscapeMaker#readme"
+}
