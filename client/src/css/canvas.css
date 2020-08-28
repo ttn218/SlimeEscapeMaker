@@ -1,0 +1,38 @@
+.canvas_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.canvas_container .mycanvas {
+  border: 1px solid;
+  border-color: black;
+}
+
+.canvas_container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  padding: 1 1 1 1;
+}
+
+.canvas_container button img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto auto;
+}
+/*# sourceMappingURL=canvas.css.map */

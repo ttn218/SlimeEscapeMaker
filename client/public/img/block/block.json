@@ -1,0 +1,20 @@
+[
+  [
+    "/img/block/wall/wall.png",
+    "/img/block/wall/wall_right.png",
+    "/img/block/wall/wall_left.png",
+    "/img/block/wall/wall_horizontal.png",
+    "/img/block/wall/wall_down.png",
+    "/img/block/wall/wall_right_down.png",
+    "/img/block/wall/wall_down_left.png",
+    "/img/block/wall/wall_T_down.png",
+    "/img/block/wall/wall_top.png",
+    "/img/block/wall/wall_top_right.png",
+    "/img/block/wall/wall_left_top.png",
+    "/img/block/wall/wall_T_top.png",
+    "/img/block/wall/wall_vertical.png",
+    "/img/block/wall/wall_T_right.png",
+    "/img/block/wall/wall_T_left.png",
+    "/img/block/wall/wall_cross.png"
+  ]
+]
