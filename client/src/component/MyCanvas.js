@@ -76,8 +76,13 @@ class MyCanvas extends React.Component {
     var { randermap } = this.state;
     map.forEach((element, x_Index) => {
       element.forEach((number, y_Index) => {
-        if (number === 0 || this.state.randermap[x_Index][y_Index] === 1)
+        if (number === 0 || this.state.randermap[x_Index][y_Index] === 1){
+          if(this.state.randermap[x_Index][y_Index] === 0){
+            ctx.clearRect(x_Index * 48, y_Index * 48, 48, 48);
+            randermap[x_Index][y_Index] = 1;
+          }
           return;
+        }
         ctx.clearRect(x_Index * 48, y_Index * 48, 48, 48);
         randermap[x_Index][y_Index] = 1;
         const nowform = this.objcheck(number, x_Index, y_Index);
@@ -91,6 +96,7 @@ class MyCanvas extends React.Component {
     });
     this.setState({
       ctx,
+      randermap
     });
   };
 
@@ -187,8 +193,8 @@ class MyCanvas extends React.Component {
           <button onClick={this.select} value={1}>
             <img src="/img/block/wall/wall.png" alt="wall" />
           </button>
-          <button onClick={this.select} value={2}>
-            2
+          <button onClick={this.select} value={0}>
+            empty
           </button>
           <button onClick={this.select} value={3}>
             3
