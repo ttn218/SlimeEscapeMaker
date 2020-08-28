@@ -57,6 +57,8 @@ class MyCanvas extends React.Component {
           imgdatas,
         });
       });
+
+      this.draw();
   }
 
   objcheck = (obj, x, y) => {
@@ -76,8 +78,8 @@ class MyCanvas extends React.Component {
     var { randermap } = this.state;
     map.forEach((element, x_Index) => {
       element.forEach((number, y_Index) => {
-        if (number === 0 || this.state.randermap[x_Index][y_Index] === 1){
-          if(this.state.randermap[x_Index][y_Index] === 0){
+        if (number === 0 || this.state.randermap[x_Index][y_Index] === 1) {
+          if (this.state.randermap[x_Index][y_Index] === 0) {
             ctx.clearRect(x_Index * 48, y_Index * 48, 48, 48);
             randermap[x_Index][y_Index] = 1;
           }
@@ -87,7 +89,7 @@ class MyCanvas extends React.Component {
         randermap[x_Index][y_Index] = 1;
         const nowform = this.objcheck(number, x_Index, y_Index);
         ctx.drawImage(
-          imgdatas[(nowform + (number-1) * 16)],
+          imgdatas[nowform + (number - 1) * 16],
           x_Index * 48,
           y_Index * 48
         );
@@ -96,13 +98,12 @@ class MyCanvas extends React.Component {
     });
     this.setState({
       ctx,
-      randermap
+      randermap,
     });
   };
 
   draw = () => {
     let ctx = this.state.ctx;
-
     ctx.setLineDash([4, 5]);
     var i = 1;
     ctx.beginPath();
